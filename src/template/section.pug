@@ -1,0 +1,24 @@
+mixin sectionItem(svgurl, text)
+  div(class='section-item')
+    div(class='section-ic')
+      span(class='section-ic_cnt')
+      //-  img(class='section-ic_url', src=svgurl)
+      svg(svg xmlns:xlink="http://www.w3.org/1999/xlink" class='section-ic_url')
+        use(xlink:href=svgurl)
+
+
+
+    div(class='section-item_tx')=text
+
+
+div(class='section')
+  div(class='section-title')='Lorem ipsum dolor'
+  div(class='flex __4')
+    div(class='flex-i')
+      +sectionItem('./res/section/leaf.svg#leaf', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do')
+    div(class='flex-i')
+      +sectionItem('./res/section/eat.svg#eat', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do')
+    div(class='flex-i')
+      +sectionItem('./res/section/leaf.svg#leaf', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do')
+    div(class='flex-i')
+      +sectionItem('./res/section/eat.svg#eat', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do')

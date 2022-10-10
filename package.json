@@ -1,0 +1,35 @@
+{
+  "name": "Logo online",
+  "version": "1.0.0",
+  "description": "Practice layout",
+  "scripts": {
+    "start": "parcel ./src/index.pug --port 1111",
+    "build": "parcel build ./src/index.pug -d public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kweyjibo/catenergy-layout.git"
+  },
+  "keywords": [
+    "html",
+    "layout"
+  ],
+  "author": "kweyjibo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kweyjibo/catenergy-layout/issues"
+  },
+  "homepage": "https://github.com/kweyjibo/catenergy-layout#readme",
+  "dependencies": {
+    "parcel-bundler": "1.12.4"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "marked": "1.2.8",
+    "parcel": "^2.5.0",
+    "pug": "3.0.2",
+    "sass": "1.32.5"
+  }
+}

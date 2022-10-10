@@ -1,0 +1,19 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+.header {
+  height: 70px;
+}
+
+.header-logo {
+  display: inline-block;
+  margin-right: $shift*17;
+
+  width: 53px;
+  height: 24px;
+}
+
+@import "nav";

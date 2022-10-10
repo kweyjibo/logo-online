@@ -1,0 +1,13 @@
+nav(class='nav')
+  mixin navLink(title, url, count)
+    a(href=url, class="nav_lk")&attributes(attributes)= title
+
+  label(for='nav-trigger' class='nav-trigger')
+  input(type='checkbox' id='nav-trigger' class='nav-checkbox')
+
+  div(class='nav-popup')
+    +navLink('Courses', '#')(class='__active')
+    +navLink('Schools', '#')
+    +navLink('Reviews', '#')
+    +navLink('Sales', '#')
+    +navLink('Blog', '#')

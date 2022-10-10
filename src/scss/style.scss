@@ -1,0 +1,84 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+
+/* --------------- Common -------------------- */
+
+body, html {
+    margin: 0;
+
+    font-family: Tahoma, Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    background-color: $bg-color;
+}
+
+body, html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+
+    height: 100%;
+}
+
+.middle {
+    flex: 1;
+}
+
+.island {
+    width: 100%;
+    max-width: 1268px;
+
+    &.__shift {
+        box-sizing: border-box;
+        padding-left: $shift*5;
+        padding-right: $shift*5;
+    }
+}
+
+.media-mobile {
+    display: none;
+}
+
+
+.flex {
+    display: flex;
+    height: 100%;
+
+    &.__center {
+        align-items: center;
+        white-space: nowrap;
+    }
+}
+
+
+/* --------------- /common -------------------- */
+
+
+/* --------------- Imports -------------------- */
+
+@import "header";
+@import "footer";
+
+/* --------------- /imports -------------------- */
+
+
+/* --------------- Imports media -------------------- */
+
+@import "tablet";
+@import "mobile";
+
+/* --------------- /imports media -------------------- */

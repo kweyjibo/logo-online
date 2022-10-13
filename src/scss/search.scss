@@ -1,0 +1,21 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+
+.search {
+  padding-left: $shift*8;
+}
+
+.search-input {
+  padding: $shift;
+
+  font-size: 16px;
+  border: 0;
+
+  &::placeholder {
+    color: #b5b5b5
+  }
+}

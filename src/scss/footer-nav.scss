@@ -1,0 +1,30 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+.footer-nav {
+  padding-top: $shift*12;
+  padding-bottom: $shift*12;
+
+  border-bottom: 1px solid #373737;
+
+  font-size: 12px;
+}
+
+.footer-nav_i {
+  & + & {
+    margin-top: $shift*3;
+  }
+}
+
+.footer-nav_url {
+  color: #a6a6a6;
+}
+
+.footer-nav_name {
+  padding-bottom: $shift*4;
+  color: #fff;
+  text-transform: uppercase;
+}

@@ -9,5 +9,16 @@
   width: 100%;
   min-height: 100px;
 
+  color: #fff;
   background-color: #000;
 }
+
+.footer-bottom {
+  height: 56px;
+}
+
+/* --------------- Imports -------------------- */
+
+@import "footer-nav";
+
+/* --------------- /imports -------------------- */

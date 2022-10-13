@@ -1,0 +1,14 @@
+mixin block(text)
+  div(class='footer-nav_i')
+    span=text
+
+mixin link(text, url)
+  div(class='footer-nav_i')
+    a(href=url, class='footer-nav_url')=text
+
+mixin footerNavItem(category, mixins, args)
+  div(class='footer-nav_section')
+    div(class='footer-nav_name')=category
+    div(class='footer-nav_list')
+      each mixin, item in mixins
+        +#{mixin}(...args[item])

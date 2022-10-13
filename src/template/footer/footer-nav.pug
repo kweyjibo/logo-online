@@ -1,0 +1,9 @@
+include footer-nav.mixin.pug
+
+nav(class='footer-nav')
+  div(class='island __shift')
+    div(class='flex __5')
+      div(class='flex-i')
+        +footerNavItem('Category', ['link','link'], [['this','#'], ['or that','/temp']])
+      div(class='flex-i')
+        +footerNavItem('Schools', ['link','link'], [['School N1','#'], ['or School N2','/temp']])

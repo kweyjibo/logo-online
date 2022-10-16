@@ -17,6 +17,27 @@
   height: 56px;
 }
 
+.footer-logo {
+  margin-right: $shift*12;
+
+  svg {
+    fill: #fff;
+  }
+}
+
+.footer-socials {
+  margin-left: $shift*5;
+}
+
+.footer-socials_i {
+  display: inline-block;
+
+  & + & {
+    margin-left: $shift*4;
+  }
+}
+
+
 /* --------------- Imports -------------------- */
 
 @import "footer-nav";

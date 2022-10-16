@@ -4,6 +4,8 @@ footer(class='footer')
     div(class='footer-bottom')
       div(class='flex __center')
         div(class='flex-i')
-          a(href='', class='header-logo')
+          a(href='', class='footer-logo')
             include ../components/logo.pug
-        div(class='flex-i')='2021 Logo Все права защищены'
+        div(class='flex-i __wide')='2021 Logo Все права защищены'
+        div(class='flex-i')
+          include socials.pug

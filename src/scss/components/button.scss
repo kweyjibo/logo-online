@@ -1,0 +1,32 @@
+/* --------------- Vars -------------------- */
+
+@import "../vars";
+
+/* --------------- /vars -------------------- */
+
+
+.button {
+  width: 100%;
+  display: block;
+  padding: $shift*2 $shift*7;
+
+  border-radius: 100px;
+  border: 0;
+
+  cursor: pointer;
+
+  &.__green {
+    background-color: $main-color;
+    color: #fff;
+  }
+
+  &.__black {
+    background-color: #fff;
+    border: 1px solid #2b2b2b;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}

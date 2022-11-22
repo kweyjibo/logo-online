@@ -45,8 +45,11 @@ a {
 }
 
 .flex.__center {
-  white-space: nowrap;
   align-items: center;
+}
+
+.flex.__no-wrap {
+  white-space: nowrap;
 }
 
 .flex.__5 .flex-i {
@@ -191,6 +194,10 @@ a {
   line-height: 39px;
 }
 
+.cours-card-cnt_1 {
+  width: 20%;
+}
+
 .cours-card {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -203,10 +210,76 @@ a {
   margin-top: 12px;
 }
 
+.cours-card_name, .cours-card_company, .cours-card_review {
+  font-weight: bold;
+}
+
 .cours-card_name {
   font-size: 16px;
-  font-weight: 700;
   line-height: 24px;
+}
+
+.cours-card_company_cnt {
+  padding-right: 16px;
+}
+
+.cours-card_company {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.cours-card_review {
+  color: #b5b5b5;
+  font-size: 12px;
+  line-height: 27px;
+}
+
+.cours-card_oldprice {
+  color: #b5b5b5;
+  line-height: 27px;
+  text-decoration-line: line-through;
+}
+
+.cours-card_price {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.cours-card_pricemonth {
+  color: #67b737;
+  line-height: 27px;
+}
+
+.tico {
+  display: flex;
+}
+
+.tico-ic {
+  padding-right: 12px;
+}
+
+.button {
+  width: 100%;
+  cursor: pointer;
+  border: 0;
+  border-radius: 100px;
+  padding: 8px 28px;
+  display: block;
+}
+
+.button.__green {
+  color: #fff;
+  background-color: #67b737;
+}
+
+.button.__black {
+  background-color: #fff;
+  border: 1px solid #2b2b2b;
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
 }
 
 /*# sourceMappingURL=index.e8265c92.css.map */

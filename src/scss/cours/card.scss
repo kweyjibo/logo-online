@@ -4,6 +4,9 @@
 
 /* --------------- /vars -------------------- */
 
+.cours-card-cnt_1 {
+  width: 20%;
+}
 
 .cours-card {
   padding: $shift*8 $shift*12;
@@ -18,8 +21,44 @@
   }
 }
 
+.cours-card_name,
+.cours-card_company,
+.cours-card_review {
+  font-weight: bold;
+}
+
 .cours-card_name {
-  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+}
+
+.cours-card_company_cnt {
+  padding-right: $shift*4;
+}
+
+.cours-card_company {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.cours-card_review {
+  font-size: 12px;
+  line-height: 27px;
+  color: #b5b5b5;
+}
+
+.cours-card_oldprice {
+  line-height: 27px;
+  text-decoration-line: line-through;
+  color: #b5b5b5;
+}
+
+.cours-card_price {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.cours-card_pricemonth {
+  line-height: 27px;
+  color: $main-color;
 }

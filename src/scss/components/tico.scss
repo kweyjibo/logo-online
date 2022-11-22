@@ -1,0 +1,14 @@
+/* --------------- Vars -------------------- */
+
+@import "../vars";
+
+/* --------------- /vars -------------------- */
+
+
+.tico {
+  display: flex;
+}
+
+.tico-ic {
+  padding-right: $shift*3;
+}

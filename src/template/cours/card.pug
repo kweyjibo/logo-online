@@ -1,14 +1,25 @@
-mixin card(name, company, rating, review)
+mixin card(name, company, rating, review, time, oldprice, price, pricemonth)
+  include ../components/tico.pug
+  include ../components/button.pug
   div(class='cours-card')
-    div(class='flex')
-      div(class='flex-i')
+    div(class='flex __center')
+      div(class='flex-i cours-card-cnt_1')
         div(class='cours-card_name')=name
       div(class='flex-i')
-        div(class='')
-          div(class='')=company
+        div(class='cours-card_company_cnt')
+          div(class='cours-card_company')=company
           div(class='')=rating
-          div(class='')='Review ' + review
+          div(class='cours-card_review')='Review ' + review
+      div(class='flex-i')
+        div(class='')
+          div(class='cours-card_oldprice')='$'+oldprice
+          div(class='cours-card_price')='$'+oldprice
+          div(class='cours-card_pricemonth')='from '+pricemonth+' per/month'
+      div(class='flex-i')
+        div(class='cours-card_time')
+          +tico('./res/clock.svg', time)
       div(class='flex-i')
       div(class='flex-i')
-      div(class='flex-i')
-      div(class='flex-i')
+        div(class='')
+          +button('Open site', '__green')
+          +button('More', '__black')
